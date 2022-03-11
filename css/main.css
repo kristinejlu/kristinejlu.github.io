@@ -1,0 +1,256 @@
+body {
+  font-family: "Inconsolata", monospace;
+}
+
+a {
+  color: orange;
+  text-decoration: none;
+}
+
+a:hover {
+  color: orange;
+}
+
+tag {
+  padding: 0em 0.4em 0.1em 0.4em;
+  border-radius: 5px;
+  color: rgb(9, 156, 175);
+  background-color: #00ff1f33;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+}
+
+tag:hover {
+  color: rgb(5, 93, 105);
+  background-color: #00ffa957;
+}
+
+h3 {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
+.nav a {
+  color: black;
+}
+
+.nav a.active {
+  color: orange;
+}
+
+.nav a:hover:not(.active) {
+  opacity: 0.5;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+}
+
+.photo {
+  width: 450px;
+}
+
+.outer {
+  display: "grid";
+}
+
+.inner {
+  margin: auto;
+  width: 1080px;
+  /* border: 1px black solid; */
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  /* grid-template-rows: 1fr auto; */
+  grid-gap: 1em;
+  /* grid-column-gap: 1em;
+  grid-row-gap: 1em; */
+}
+
+.wrapper > div {
+  /* background-color: #eeeeee; */
+  padding: 1em;
+}
+
+/* .wrapper > div:nth-child(even) {
+  background-color: #eee;
+} */
+
+.pic {
+  /* background-size: cover;
+  background-image: url('../assets/grad.jpg'); */
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.info {
+  align-self: center;
+  width: 304px;
+}
+
+.nav {
+  display: grid;
+  grid-auto-rows: 3em;
+  align-items: center;
+  align-self: center;
+  border-left: 1px black solid;
+}
+
+.content {
+  grid-column: 1/3;
+  /* background-color: antiquewhite; */
+  /* border: 1px black solid;
+  -webkit-border-radius: 3px;
+  border-radius: 5px;
+  box-shadow: 6px 6px 6px -6px rgba(255, 166, 0, 0.459);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out; */
+}
+
+.post {
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+.player {
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+.paper:hover {
+  box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.425);
+}
+
+.paper {
+  /* -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out; */
+  box-shadow: 0px 1px 4px -2px rgba(0, 0, 0, 0.425);
+}
+
+.paragraph {
+  margin-left: 1em;
+}
+
+.paragraph > div {
+  margin-left: 1em;
+}
+
+.award {
+  color: orangered;
+}
+
+.col1 {
+  grid-column: 1;
+}
+
+.col2 {
+  grid-column: 2;
+}
+
+.proj-img {
+  background-color: aquamarine;
+  align-self: center;
+  justify-self: center;
+  width: 200px;
+  height: 200px;
+}
+
+
+footer {
+  padding: 1em;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+
+.player iframe {
+  width: 400px;
+}
+
+@media screen and (max-width: 1080px) {
+  /* CSS for screens that are 320 pixels or less will be put in this section */
+  .inner {
+    width: 704px;
+    /* border: 1px black solid; */
+  }
+  .info {
+    align-self: center;
+    justify-self: center;
+    width: 304px;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1em;
+  }
+  .pic {
+    display: none;
+  }
+  .content {
+    grid-column: 1/3;
+  }
+}
+
+.social-media {
+  display: grid;
+  margin: 1em;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 15px;
+  font-size: 30px;
+  width: 18px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  background-color: #c3c3c387;
+  color: white;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.5;
+  color: white;
+  background-color: orange;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+}
+
+.fa-github {
+  padding: 5px;
+  font-size: 30px !important;
+  width: 37px;
+  padding-top: 7px;
+}
+
+@media screen and (max-width: 730px) {
+  .inner {
+    width: auto;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 1em;
+  }
+  .content {
+    grid-column: 1/2;
+  }
+
+  .player {
+    margin: 0.5em -1.5em 0.5em -1.5em;
+    padding: 0.5em 0 0.5em 0;
+  }
+
+  .player iframe {
+    width: 100%;
+  }
+}
