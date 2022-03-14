@@ -1,9 +1,10 @@
 body {
   font-family: 'Playfair Display', serif;
+font-family: 'Pontano Sans', sans-serif;
 }
 
 a {
-  color: orange;
+  color: rgb(0, 153, 255);
   text-decoration: none;
 }
 
