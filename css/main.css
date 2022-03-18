@@ -9,7 +9,7 @@ a {
 }
 
 a:hover {
-  color: orange;
+  color: rgb(17, 0, 255);
 }
 
 tag {
@@ -86,6 +86,8 @@ h3 {
   justify-content: center;
   align-content: center;
 }
+
+.pic > img {width: 300px;}
 
 .info {
   align-self: center;
@@ -186,9 +188,6 @@ footer {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 1em;
-  }
-  .pic {
-    display: none;
   }
   .content {
     grid-column: 1/3;
